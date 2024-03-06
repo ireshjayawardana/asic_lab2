@@ -1,0 +1,129 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../lab_2.gen/sources_1/bd/PMIC",
+      "name": "PMIC",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1.2"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "fsm_0": ""
+    },
+    "ports": {
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "reset_rtl_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "PMIC_clk_wiz_0_0",
+        "xci_path": "ip\\PMIC_clk_wiz_0_0\\PMIC_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0"
+      },
+      "fsm_0": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "PMIC_fsm_0_0",
+        "xci_path": "ip\\PMIC_fsm_0_0\\PMIC_fsm_0_0.xci",
+        "inst_hier_path": "fsm_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "low_bat": {
+            "direction": "I"
+          },
+          "on_off": {
+            "direction": "I"
+          },
+          "low_pwr_md": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "tmr_out": {
+            "direction": "I"
+          },
+          "tmr_on": {
+            "direction": "O"
+          },
+          "tmr_rst": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "tmr_ctrl": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "v3v3": {
+            "direction": "O"
+          },
+          "v2v5": {
+            "direction": "O"
+          },
+          "v1v2": {
+            "direction": "O"
+          },
+          "ready": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "fsm_0/clk"
+        ]
+      },
+      "reset_rtl_0_1": {
+        "ports": [
+          "reset_rtl_0",
+          "clk_wiz_0/reset",
+          "fsm_0/rst"
+        ]
+      }
+    }
+  }
+}

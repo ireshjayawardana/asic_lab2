@@ -22,8 +22,12 @@
 
 module fsm(
     input clk,
-    input low_bat,
-    output reg vout
+    input low_bat,on_off,low_pwr_md,rst,
+    input tmr_out,
+    output reg tmr_on,tmr_rst,
+    output reg [3:0] tmr_ctrl,
+    
+    output reg v3v3,v2v5,v1v2,ready
     );
     
     reg [4:0]state, next_state;
