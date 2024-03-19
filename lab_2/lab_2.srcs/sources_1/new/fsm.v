@@ -29,7 +29,13 @@ module fsm(
     
     output reg v3v3,v2v5,v1v2,ready
     );
-    
+    parameter IDEL = 0, 
     reg [4:0]state, next_state;
+    
+    always @ (poseedge(clk) or rst)
+    begin
+        if (rst)
+            begin
+                
     
 endmodule
