@@ -2,10 +2,10 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Mar 19 16:33:21 2024
-# Process ID: 25068
+# Start of session at: Tue Mar 19 16:31:19 2024
+# Process ID: 21156
 # Current directory: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30108 C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33808 C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.xpr
 # Log file: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/vivado.log
 # Journal file: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2\vivado.jou
 # Running On: iresh, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34069 MB
@@ -56,21 +56,19 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1635.973 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1642.125 ; gain = 0.000
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
+update_module_reference PMIC_fsm_0_0
 CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
 CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
 ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.
 ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v'.
 WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v'.
 ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'fsm'.
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
 update_compile_order -fileset sources_1
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:34]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:42]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:34]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:42]
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 18:52:18 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 16:33:17 2024...

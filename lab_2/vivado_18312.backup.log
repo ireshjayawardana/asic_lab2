@@ -2,10 +2,10 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Mar 19 16:33:21 2024
-# Process ID: 25068
+# Start of session at: Wed Mar  6 17:14:46 2024
+# Process ID: 18312
 # Current directory: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30108 C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15796 C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.xpr
 # Log file: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/vivado.log
 # Journal file: C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2\vivado.jou
 # Running On: iresh, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34069 MB
@@ -51,26 +51,41 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1635.973 ; gain = 0.000
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
-ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.
-ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v'.
-WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'c:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v'.
-ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'fsm'.
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:33]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:41]
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1640.465 ; gain = 0.000
 update_compile_order -fileset sources_1
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:34]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:42]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'reg' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:34]
-CRITICAL WARNING: [HDL 9-1206] Syntax error near 'endmodule' [C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/new/fsm.v:42]
+create_bd_design "PMIC"
+Wrote  : <C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.srcs\sources_1\bd\PMIC\PMIC.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Clk {New External Port} Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl_0 /clk_wiz_0/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+endgroup
+create_bd_cell -type module -reference fsm fsm_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'tmr_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {1.5 248 108} [get_bd_cells fsm_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins fsm_0/clk]
+connect_bd_net [get_bd_ports reset_rtl_0] [get_bd_pins fsm_0/rst]
+save_bd_design
+Wrote  : <C:\Users\iresh\OneDrive\Desktop\asic labs\lab2\asic_lab2\lab_2\lab_2.srcs\sources_1\bd\PMIC\PMIC.bd> 
+Wrote  : <C:/Users/iresh/OneDrive/Desktop/asic labs/lab2/asic_lab2/lab_2/lab_2.srcs/sources_1/bd/PMIC/ui/bd_c19597f7.ui> 
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 18:52:18 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 17:23:30 2024...

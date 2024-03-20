@@ -29,7 +29,8 @@ module fsm(
     
     output reg v3v3,v2v5,v1v2,ready
     );
-    parameter IDEL = 0, 
+    parameter IDEL = 0,ON_3V3 = 1, ON_2V5 = 3, ON_1V2 = 4, TRG_OFF = 5, INT_OFF = 6, 
+                OFF_1V2_INT_2V5 =7,  
     reg [4:0]state, next_state;
     
     always @ (poseedge(clk) or rst)
