@@ -11,7 +11,8 @@
     },
     "design_tree": {
       "clk_wiz_0": "",
-      "fsm_0": ""
+      "fsm_0": "",
+      "tmr_0": ""
     },
     "ports": {
       "clk_100MHz": {
@@ -102,6 +103,48 @@
             "direction": "O"
           }
         }
+      },
+      "tmr_0": {
+        "vlnv": "xilinx.com:module_ref:tmr:1.0",
+        "xci_name": "PMIC_tmr_0_0",
+        "xci_path": "ip\\PMIC_tmr_0_0\\PMIC_tmr_0_0.xci",
+        "inst_hier_path": "tmr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "tmr",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "tmr_on": {
+            "direction": "I"
+          },
+          "tmr_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "tmr_ctrl": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "tmr_out": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
@@ -114,14 +157,40 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "fsm_0/clk"
+          "fsm_0/clk",
+          "tmr_0/clk"
+        ]
+      },
+      "fsm_0_tmr_ctrl": {
+        "ports": [
+          "fsm_0/tmr_ctrl",
+          "tmr_0/tmr_ctrl"
+        ]
+      },
+      "fsm_0_tmr_on": {
+        "ports": [
+          "fsm_0/tmr_on",
+          "tmr_0/tmr_on"
+        ]
+      },
+      "fsm_0_tmr_rst": {
+        "ports": [
+          "fsm_0/tmr_rst",
+          "tmr_0/tmr_rst"
         ]
       },
       "reset_rtl_0_1": {
         "ports": [
           "reset_rtl_0",
           "clk_wiz_0/reset",
-          "fsm_0/rst"
+          "fsm_0/rst",
+          "tmr_0/rst"
+        ]
+      },
+      "tmr_0_tmr_out": {
+        "ports": [
+          "tmr_0/tmr_out",
+          "fsm_0/tmr_out"
         ]
       }
     }
